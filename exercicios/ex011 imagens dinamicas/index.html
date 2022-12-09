@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h5>18.11.22 <br>Aula 02 <br> Cap 11 <br> Mod 1/5</h5>
+    <h1>Imagem Dinâmica</h1>
+    <p>
+        Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do navegador.
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+
+    <!--
+        tag 'picture'serve para adicionar imagem no site, com a possibilidade de inserir multiplas tags 'source:media:type' para controlar o tamnho da imagem conforme o dispositivo de visualização, ex. tela do (celular 300px, tablet 700px, pc/tv 1.000px), sendo necessário introduzir a tag 'source:media:type' para cada tamanho da imagem adicional.
+        tag 'img' serve para inserir a imagem no site.
+        tag 'source:media:type' serve para limitar o tamanho e tipo de imagem que foi inserida.
+        tag 'alt' serve para inserir um texto no site, caso a imagem não seja carregada pelo navegador do cliente.
+        Obs: MAX-WIDTH significa tamanho máximo da largura da imagem.
+    -->
+
+    <h5>18.11.22 <br>Aula 03 <br> Cap 11 <br> Mod 1/5</h5>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio no HTML5.</p>
+    <audio src="midia/world's-sunrise-youtube-jimena-contreras.mp3" controls autoplay></audio> <!--Primeira forma de adicionar arquivo de áudio no site.-->
+
+    <audio> <!--Segunda e a melhor forma de adicionar arquivo de áudio no site-->
+        <source src="midia/world's-sunrise-youtube-jimena-contreras.mp3" type="audio/mpeg"> <!--Arquivo MP3-->
+
+        <source src="midia/world's-sunrise-youtube-jimena-contreras.mp3" type="audio/ogg"> <!--Arquivo ogg-->
+
+        <source src="midia/world's-sunrise-youtube-jimena-contreras.mp3" type="audio/wav"> <!--Arquivo wav, porem sãos muitos pesados/grandes-->
+        <p>
+            Infelizmente seu navegador não consegue reproduzir este áudio. <a href="midia/world's-sunrise-youtube-jimena-contreras.mp3">Clique aqui para baixar o arquivo MP3.</a>
+        </p>
+    </audio>
+
+    <!--
+        tag 'audio' serve para adicionar áudio no site, sendo necessário adicionar a tag 'controls' para mostrar o Player no site.
+        tag 'controls' serve para adicionar o player de reprodução no site
+        tag 'source:src' serve para selecionar o áudio dentro da tag 'audio'. Mas é necessário apagar a tag 'src' gerada pela tag 'audio'.
+        Obs: os formatos compatíveis com a maioria dos navegadores são arquivos MP3, WAV, OGG.
+        Obs: o formato do audio em MP3 para colocar dentro da tag 'type' de audio e o (audio/mpeg).
+    -->
+    
+</body>
+</html>

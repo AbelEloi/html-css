@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda Personalizada</title>
+    <style>
+        h1 {
+            border: 10px solid transparent;
+            padding: 5px;
+            border-image-source: url('#'); /* esta tag serve para adicionar a borda personalizada conforme o desejo do cliente em determinados pedidos específicos. Obs: substituir o '#' com o endereço da borda personalizada. */
+            border-image-slice: 27; /* É necessário para funcionar a tag 'border-image-source' */
+            border-image-repeat: repeat; /* É necessário para funcionar a tag 'border-image-source' */
+
+            /* tem a shorthand da tag 'border-image' sequência é source, slice, repeat */
+
+        }
+    </style>
+</head>
+<body>
+    <!--
+    24.11.22 
+    Aula 07 Cap 16 Mod 2/5
+    -->
+
+    <h1>Teste de Borda</h1>
+    
+</body>
+</html>

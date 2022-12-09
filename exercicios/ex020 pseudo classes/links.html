@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* 
+        um pseudo-classe é com : somente, um pseudo-elemento é co :: 
+        
+        Seletores Personalizados:
+        #   = id
+        .   = class
+        :   = pseudo-class
+        ::  = pseudo-element
+        >   = children
+
+        */
+
+        body{
+            font-family: arial, helvetica, sans-serif;
+
+        }
+
+        h1{
+            text-decoration: underline;
+            width: bold;
+            color: white;
+            background-color: gray;
+            width: 440px;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: blue;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: green;
+        }
+
+        a::after{
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h5>24.11.22 <br>Aula 04 <br> Cap 15 <br> Mod 2/5</h5>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li> <a href="#" target="_blank">Repositório do GitHub</a></li>
+        <li> <a href="#" target="_blank">Canal do Youtube</a></li>
+        <li> <a href="#" target="_blank">Site do Curso em Vídeo</a></li>
+    </ul>
+    
+
+<!--
+-->
+
+    
+</body>
+</html>

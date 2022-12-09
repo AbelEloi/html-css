@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>/* 23.11.22 Aula 07 Cap 14 Mod 2/5 */
+        @font-face {
+            font-family: 'paladins';
+            src: url(fonts/paladins.ttf) format('truetype'), url(fonts/paladinslaser.ttf) format(truetype);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'paladinslaser';
+            src: url(fonts/paladinslaser.ttf) format(truetype);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+       /*Tipos de Format()
+       -opentype (otf)
+       -truetype (ttf)
+       -embedded-opentype
+       -truetype-aat (apple advanced typography)
+       -svg
+       */
+        body{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            background-color: #777;
+        }
+        h1{
+            font-family: 'paladins', sans-serif;
+            font-size: 3em;
+        }
+
+        h2{
+            font-family: 'paladinslaser', sans-serif;       
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h5>23.11.22 <br>Aula 04 <br> Cap 14 <br> Mod 2/5</h5>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis rerum repellendus in, accusantium illo consectetur dolor nihil obcaecati alias consequuntur accusamus animi, tempore aliquam repellat! Sed iste quas illum et?</p>
+    <h2>Título Estilizado</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat eligendi earum adipisci ab numquam, quibusdam odio qui totam, autem officia nam suscipit aliquam. Architecto ab nulla at. Illum, aliquam laudantium.</p>
+    
+</body>
+</html>

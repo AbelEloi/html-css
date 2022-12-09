@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h5>18.11.22 <br>Aula 03 <br> Cap 11 <br> Mod 1/5</h5>
+    <h1>Inserindo vídoes hospedados localmente.</h1>
+    <p>
+        Este vídeo está hospedado no meu própio servidor.
+    </p>
+
+   
+    <!--
+        Obs: Forma incorreta de inserir o vídeo no site
+        <video src="midia/pexels-pavel-danilyuk-7318864.mp4" width="300" controls></video>
+    <video src="midia/pavel-danilyuk-7318864.m4v" width="300" controls></video>
+    <video src="midia/pavel-danilyuk-7318864.webm" width="300" controls></video>
+    <video src="midia/file.mp4" width="300" controls></video>
+    -->
+
+    <h5>18.11.22 <br>Aula 05 <br> Cap 11 <br> Mod 1/5</h5>
+    <h1>Inserindo vídoes hospedados localmente.</h1>
+    <p>
+        Este vídeo está hospedado no meu própio servidor.
+    </p>
+
+    <video width="300" poster=imagens/foto-m.png controls autoplay loop>
+        <source src="midia/file.mp4" type="video/mp4">
+        <source src="midia/pavel-danilyuk-7318864.m4v" type="video/mp4"><!--O m4v é o mais recomendado-->
+        <source src="midia/pavel-danilyuk-7318864.webm" type="video/webm">
+        <source src="midia/pexels-pavel-danilyuk-7318864.mp4" type="video/mp4">
+        <p>
+            Seu navegador não tem compatibilidade com reprodução de vídeo.
+        </p>
+    </video>
+
+
+    <!--
+        Tag 'video' serve para inserir vídeo no site, sendo necessário inserir a tag 'width' para selecionar a lagura do vídeo, e a tag 'controls' para exibir o controle de mídia.
+        tag 'poster' serve para inserir a imagem da capa do vídeo, e deve ser inserido dentro da tag 'video'.
+        Obs: para inserir o vídeo de forma correta é necessário inserir a tag 'source' dentro da tag 'video'.
+    -->
+
+    <h5>18.11.22 <br>Aula 06 <br> Cap 11 <br> Mod 1/5</h5>
+    <h1>Inserindo vídoes hospedados externamente.</h1>
+    <p>
+        Inserindo vídeos do youtube, que é gratuito e sem Direitos Autorais.
+    </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!--
+        Obs: opção de inserir o link em HTML do youtube, pois é só abrir o Youtube selecionar o vídeo desejado clique em: incorporar, copiar e colar aqui.
+        tag 'iframe' serve para 
+    -->
+
+
+</body>
+</html>

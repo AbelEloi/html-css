@@ -1,0 +1,49 @@
+@charset 'utf-8';
+
+/* 24.11.22 Aula 01 Cap 15 Mod 2/5 */
+
+/* 
+    tag de identificador 'principal' serve para personalizar uma tag específica com a indicação de '#' entre a tag e o identificador que está no HTML.
+    a tag 'id' em HTML é igaul a (# hashtag) em CSS. (só pode colocar um elemento por página).
+    a tag 'class' em HTML é igaul a (. ponto) em CSS. (pode colocar vários elementos por páginas).
+*/
+
+body{
+    background-color: rgb(167, 230, 122);
+    font-family: arial, helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(0, 42, 2);
+}
+
+h1#principal{
+    text-align: center;
+    background-color: rgb(0, 79, 3);
+    color: white;
+}
+
+h2{
+    color: rgb(8, 91, 29);
+}
+
+/* 24.11.22 Aula 02 Cap 15 Mod 2/5 */
+
+.basico{
+    color: rgb(8, 91, 29);
+    font-weight: bold;
+}
+
+.intermediario{
+    color: rgb(149, 151, 1)
+}
+
+.avancado{
+    color: rgb(91, 8, 8)
+}
+
+.destaque{
+    background-color: rgba(255, 255, 0, 0.443);
+    text-decoration: underline;
+}
+
